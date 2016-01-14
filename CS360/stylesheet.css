@@ -1,0 +1,261 @@
+div {
+        border-radius:5px;
+}
+
+#header {
+        display:block;
+        margin:auto;
+        width:95%;
+        height:10%;
+        background-color:black;
+        padding-top:1%;
+        padding-bottom:1%;
+}
+
+#left {
+        display:relative;
+        float:left;
+        width: 17%;
+        height: 67%;
+        background-color:#0e275a;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 2.5%;
+        padding-top:1.5%;
+}
+
+.filler {
+	display:block;
+	position:relative;
+	width:100%;
+	height:60%;	
+}
+
+.filler p {
+	font-size:1.3vw;
+	color:#0e275a;
+	margin-top:90%;
+	margin-bottom:90%;
+}
+
+#right {
+        float:right;
+        width: 77%;
+        height: 70%;
+        background-color: #56678b;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-right: 2.5%;
+}
+
+#footer {
+        position:relative;
+        margin:auto;
+        clear:both;
+        width: 95%;
+        height: 10%;
+        background-color: #39445c;
+	border:1px solid black;
+}
+
+#footer p {
+	color:#39445c;	
+}
+
+#name {
+    color:white;
+    margin-left: 38%;
+    margin-right: 36%;
+    font-family: sans-serif;
+	font-size:2.3vw;
+}
+
+#forecastheader {
+	color:white;
+	margin-left: 38%;
+	margin-right: 36%;
+	font-family: sans-serif;
+	font-size:2.3vw;
+}
+
+#currweatherheader {
+	color:white;
+	margin-left: 38%;
+	margin-right: 36%;
+	font-family: sans-serif;
+	font-size:2.3vw;
+}
+
+#resume_header {
+    margin-left:4%;
+    font-family: sans-serif;
+    display:relative;
+	vertical-align:top;
+	font-size:1.4vw;
+}
+
+li {
+    font-family: sans-serif;
+    margin-left: 2%;
+	font-size: 1.3vw;
+}
+
+a {
+    color:white;
+    font-family:sans-serif;
+    text-decoration:none;
+    margin-left:10%;
+    margin-top:10%;
+	font-size:1.3vw;
+}
+
+a:hover {
+    color:red;
+}
+
+#keith {
+    border-radius:5px;
+    border:1px solid black;
+    height:100%;
+        width:100%;
+    position: relative;
+    float: right;
+	vertical-align: top;
+	margin-bottom:2%;
+}
+
+#resume {
+    width: 40%;
+    display:inline-block;
+	height: 40%;
+	position:relative;
+	vertical-align: top;
+}
+
+#imagepanel {
+    display:inline-block;
+    width: 50%;
+    height: 90%;
+    margin-top: 2%;
+    margin-left: 7%;
+}
+
+#weathericon {
+    border-radius:5px;
+    display:relative;
+    height:100%;
+    width: 100%;
+}
+
+#weathericonpanel {
+    border-radius:5px;
+    display:inline-block;
+    height:75%;
+    width:40%;
+    margin-top: 5%;
+    margin-left: 10%;
+	margin-bottom: 7.4%;
+}
+
+#weatherinfo {
+    border-radius:5px;
+    display:inline-block;
+    height: 75%;
+    width: 40%;
+    margin-left: 5%;
+    margin-bottom: 0%;
+    vertical-align:top;
+    margin-top: 5%;
+}
+
+#temp {
+    height:50%;
+    width:48%;
+    display:block;
+    vertical-align:top;
+}
+
+#temp p {
+    vertical-align:top;
+    font-size:10vw;
+    display:inline;
+    margin-left:5%;
+}
+
+.forecast {
+    display:inline-block;
+    position:relative;
+	margin-top:1%;
+	margin-left:1%;
+	height:19.5%;
+    width:60%;
+}
+
+.forecasticon {
+    display:inline-block;
+    position:relative;
+    height:100%;
+    width:16%;
+    margin-top:0.3%;
+    margin-left:0.3%;
+}
+
+.forecastinfo {
+    display:inline-block;
+    position:relative;
+    height:90%;
+    width: 50%;
+	vertical-align:top;
+	font-size:1.265vw;
+	margin-bottom:0.6%;
+}
+
+.partlycloudyicon {
+    border-radius:5px;
+    position:relative;
+    height:100%;
+    width:100%;
+}
+
+.snowicon {
+	border-radius:5px;
+	position:relative;
+	height:100%;
+	width:100%;
+}
+
+#currcity {
+    position:relative;
+    display:inline-block;
+    height:18%;
+    width: 30%;
+    vertical-align:top;
+    margin-top: 1%;
+	font-family:sans-serif;
+	font-size:1.5vw;
+}
+
+table {
+	border:1px solid black;
+}
+
+td {
+	font-size:1.5vw;
+	font-family:sans-serif;
+}
+
+pre {
+	font-family:sans-serif;
+	font-size:100%;
+	margin-top:2%;
+	margin-bottom:4%;
+	margin-left:2%;
+	vertical-align:top;
+}
+
+form {
+	margin-top:1%;
+	margin-bottom:1%;
+	color:white;
+	font-family:sans-serif;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <link type="text/css" rel="stylesheet" href="stylesheet.css?version=33">
+                <title>Current Weather</title>
+        </head>
+
+        <body>
+                <div id="header">
+                    <h1 id="currweatherheader">Current Weather</h1>
+                </div>
+
+                <div id="left">
+                    <a href="http://ec2-54-218-67-46.us-west-2.compute.amazonaws.com/CS360/main.html">My Resume</a><br/><br/>
+                    <a href="http://ec2-54-218-67-46.us-west-2.compute.amazonaws.com/CS360/currweather.html">Current Weather</a><br/><br/>
+                    <a href="http://ec2-54-218-67-46.us-west-2.compute.amazonaws.com/CS360/forecast.html">Weather Forecast</a>
+			<div class="filler">
+				<p>a<p/>
+			</div>
+                </div>
+
+                <div id="right">
+                
+                    <div id="weatherinfo">
+                        <div id="temp">
+       				 <p>20&deg;F</p>
+			</div>
+			<table border=1px solid black>
+				<tr>
+					<td>City:</td>
+					<td>Provo, UT</td>
+				</tr>
+				<tr>
+					<td>Day/Time:</td>
+					<td>Tuesday 11:00 PM</td>
+				</tr>
+				<tr>
+					<td>Conditions:</td>
+					<td>Partly Cloudy</td>
+				</tr>
+				<tr>
+					<td>High Temperature:</td>
+					<td>25&deg;F</td>
+				</tr>
+				<tr>
+					<td>Low Temperature:</td>
+					<td>10&deg;F</td>
+				</tr>
+				<tr>
+					<td>Precipitation:</td>
+					<td>0%</td>
+				</tr>
+				<tr>
+					<td>Humidity:</td>
+					<td>70%</td>
+				</tr>
+				<tr>
+					<td>Wind:</td>
+					<td>2 mph</td>
+				</tr>
+			</table>	
+                    </div>
+                    
+                    <div id="weathericonpanel">
+                        <img id="weathericon" src="http://nsullivandesign.com/wp-content/uploads/2014/10/flat_partly-cloudy.jpg"/>
+                    </div>
+                    
+                    
+                </div>
+
+                <div id="footer" style="text-align:center">
+			<form>
+                                City:
+                                <input type="text" name="city">
+                                State:
+                                <input type="text" name="state">
+                                <input type="submit" value="Submit">
+                        </form>
+                </div>
+        </body>
+</html>
