@@ -1,0 +1,478 @@
+
+> cities@0.0.0 start /opt/bitnami/apache2/htdocs/CS360/Lab7/cities
+> node ./bin/www
+
+In GetPokemon
+{}
+Bulbasaur
+[0mGET /getpokemon [36m304 [0m689.125 ms - -[0m
+In GetPokemon
+{}
+Bulbasaur
+[0mGET /getpokemon [36m304 [0m623.714 ms - -[0m
+In GetPokemon
+{}
+Bulbasaur
+[0mGET /getpokemon [36m304 [0m2.230 ms - -[0m
+In GetPokemon
+{}
+Bulbasaur
+[0mGET /getpokemon [36m304 [0m32.797 ms - -[0m
+In GetPokemon
+{}
+Bulbasaur
+[0mGET /getpokemon [36m304 [0m194.521 ms - -[0m
+In GetPokemon
+{}
+Bulbasaur
+[0mGET /getpokemon [36m304 [0m2.400 ms - -[0m
+In GetPokemon
+{ type: 'electric' }
+Bulbasaur
+[0mGET /getpokemon?type=electric [36m304 [0m31.888 ms - -[0m
+In Getcity
+{}
+/^undefined/
+[0mGET /getcity [32m200 [0m1.939 ms - 2[0m
+In Getcity
+{ q: 'A' }
+/^A/
+Alpine
+Altamont
+Alton
+Altonah
+American Fork
+Aneth
+Annabella
+Antimony
+Aurora
+Axtell
+[0mGET /getcity?q=A [36m304 [0m1.043 ms - -[0m
+In Getcity
+{ q: '' }
+/^/
+Alpine
+Altamont
+Alton
+Altonah
+American Fork
+Aneth
+Annabella
+Antimony
+Aurora
+Axtell
+Bear River City
+Beaver
+Beryl
+Bicknell
+Bingham Canyon
+Blanding
+Bluebell
+Bluff
+Bonanza
+Boulder
+Bountiful
+Brian Head
+Brigham City
+Bryce
+Bryce Canyon
+Cache Junction
+Cannonville
+Castle Dale
+Cedar City
+Cedar Valley
+Centerfield
+Centerville
+Central
+Chester
+Circleville
+Cisco
+Clarkston
+Clawson
+Clearfield
+Cleveland
+Clinton
+Coalville
+Collinston
+Corinne
+Cornish
+Croydon
+Dammeron Valley
+Delta
+Deweyville
+Draper
+Duchesne
+Duck Creek Village
+Dugway
+Dutch John
+East Carbon
+Echo
+Eden
+Elberta
+Elmo
+Elsinore
+Emery
+Enterprise
+Ephraim
+Escalante
+Eureka
+Fairview
+Farmington
+Fayette
+Ferron
+Fielding
+Fillmore
+Fort Duchesne
+Fountain Green
+Fruitland
+Garden City
+Garland
+Garrison
+Glendale
+Glenwood
+Goshen
+Grantsville
+Green River
+Greenville
+Greenwich
+Grouse Creek
+Gunlock
+Gunnison
+Gusher
+Hanksville
+Hanna
+Hatch
+Heber City
+Helper
+Henefer
+Henrieville
+Hiawatha
+Hildale
+Hill AFB
+Hinckley
+Holden
+Honeyville
+Hooper
+Howell
+Huntington
+Huntsville
+Hurricane
+Hyde Park
+Hyrum
+Ibapah
+Ivins
+Jensen
+Joseph
+Junction
+Kamas
+Kanab
+Kanarraville
+Kanosh
+Kaysville
+Kenilworth
+Kingston
+Koosharem
+La Sal
+La Verkin
+Lake Powell
+Laketown
+Lapoint
+Layton
+Leamington
+Leeds
+Lehi
+Levan
+Lewiston
+Lindon
+Loa
+Logan
+Lyman
+Lynndyl
+Magna
+Manila
+Manti
+Mantua
+Mapleton
+Marysvale
+Mayfield
+Meadow
+Mendon
+Mexican Hat
+Midvale
+Midway
+Milford
+Millville
+Minersville
+Moab
+Modena
+Mona
+Monroe
+Montezuma Creek
+Monticello
+Morgan
+Moroni
+Mount Carmel
+Mount Pleasant
+Mountain Home
+Myton
+Neola
+Nephi
+New Harmony
+Newcastle
+Newton
+North Salt Lake
+Oak City
+Oakley
+Oasis
+Ogden
+Orangeville
+Orderville
+Orem
+Panguitch
+Paradise
+Paragonah
+Park City
+Park Valley
+Parowan
+Payson
+Peoa
+Pine Valley
+Pleasant Grove
+Plymouth
+Portage
+Price
+Providence
+Provo
+Randlett
+Randolph
+Redmond
+Richfield
+Richmond
+Riverside
+Riverton
+Rockville
+Roosevelt
+Roy
+Rush Valley
+Saint George
+Salem
+Salina
+Salt Lake City
+Sandy
+Santa Clara
+Santaquin
+Scipio
+Sevier
+Sigurd
+Smithfield
+Snowville
+South Jordan
+South Willard
+Spanish Fork
+Spring City
+Springdale
+Springville
+Sterling
+Stockton
+Summit
+Sunnyside
+Syracuse
+Tabiona
+Talmage
+Teasdale
+Thompson
+Tooele
+Toquerville
+Torrey
+Tremonton
+Trenton
+Tridell
+Tropic
+Vernal
+Vernon
+Veyo
+Virgin
+Wales
+Wallsburg
+Washington
+Wellington
+Wellsville
+Wendover
+West Jordan
+Whiterocks
+Willard
+Woodruff
+Woods Cross
+
+[0mGET /getcity?q= [32m200 [0m433.806 ms - 5080[0m
+In GetPokemon
+{ type: 'grass' }
+Bulbasaur
+[0mGET /getpokemon?type=grass [32m200 [0m1.105 ms - 962[0m
+In GetPokemon
+{ type: 'normal' }
+Bulbasaur
+[0mGET /getpokemon?type=normal [32m200 [0m39.419 ms - 2597[0m
+In GetPokemon
+{ type: 'normal', name: 'Venusaur' }
+Bulbasaur
+[0mGET /getpokemon?type=normal&name=Venusaur [32m200 [0m1.384 ms - 2[0m
+In GetPokemon
+{ type: 'grass', name: 'Venusaur' }
+Bulbasaur
+[0mGET /getpokemon?type=grass&name=Venusaur [32m200 [0m1.173 ms - 117[0m
+In GetPokemon
+{ type: 'grass', attack: '82' }
+Bulbasaur
+[0mGET /getpokemon?type=grass&attack=82 [32m200 [0m40.335 ms - 117[0m
+In GetPokemon
+{ attack: '82' }
+Bulbasaur
+[0mGET /getpokemon?attack=82 [32m200 [0m1.034 ms - 367[0m
+In GetPokemon
+{ attack: '82', type: 'poison', defense: '87', name: 'Nidoqueen' }
+Bulbasaur
+[0mGET /getpokemon?attack=82&type=poison&defense=87&name=Nidoqueen [32m200 [0m1.900 ms - 135[0m
+In GetPokemon
+{ attack: '82', type: 'poison', defense: '87' }
+Bulbasaur
+[0mGET /getpokemon?attack=82&type=poison&defense=87 [32m200 [0m1.004 ms - 135[0m
+In Getcity
+{ q: 'U' }
+/^U/
+[0mGET /getcity?q=U [32m200 [0m0.680 ms - 2[0m
+In Getcity
+{ q: 'I' }
+/^I/
+Ibapah
+Ivins
+[0mGET /getcity?q=I [32m200 [0m0.725 ms - 36[0m
+In Getcity
+{ q: 'I' }
+/^I/
+Ibapah
+Ivins
+[0mGET /getcity?q=I [32m200 [0m1.549 ms - 36[0m
+In Getcity
+{ q: 'Pe' }
+/^Pe/
+Peoa
+[0mGET /getcity?q=Pe [32m200 [0m1.818 ms - 17[0m
+In Getcity
+{ q: 'Pr' }
+/^Pr/
+Price
+Providence
+Provo
+[0mGET /getcity?q=Pr [32m200 [0m2.569 ms - 57[0m
+In Getcity
+{ q: 'Pri' }
+/^Pri/
+Price
+[0mGET /getcity?q=Pri [32m200 [0m1.201 ms - 18[0m
+In Getcity
+{ q: 'Pric' }
+/^Pric/
+Price
+[0mGET /getcity?q=Pric [32m200 [0m1.069 ms - 18[0m
+In Getcity
+{ q: 'Price' }
+/^Price/
+Price
+[0mGET /getcity?q=Price [32m200 [0m1.415 ms - 18[0m
+In GetPokemon
+{ type: 'poison' }
+Bulbasaur
+[0mGET /getpokemon?type=poison [32m200 [0m1.995 ms - 1702[0m
+In GetPokemon
+{ type: 'ghost' }
+Bulbasaur
+[0mGET /getpokemon?type=ghost [32m200 [0m1.208 ms - 288[0m
+In GetPokemon
+{ type: 'ice' }
+Bulbasaur
+[0mGET /getpokemon?type=ice [32m200 [0m1.233 ms - 313[0m
+In GetPokemon
+{ type: 'electric' }
+Bulbasaur
+[0mGET /getpokemon?type=electric [32m200 [0m1.710 ms - 1179[0m
+In GetPokemon
+{ type: 'electric' }
+Bulbasaur
+[0mGET /getpokemon?type=electric [32m200 [0m1.277 ms - 1179[0m
+In GetPokemon
+{ type: 'electric' }
+Bulbasaur
+[0mGET /getpokemon?type=electric [32m200 [0m1.402 ms - 1179[0m
+In GetPokemon
+{ type: 'electric' }
+Bulbasaur
+[0mGET /getpokemon?type=electric [36m304 [0m247.056 ms - -[0m
+[0mGET /weather.html [32m200 [0m205.234 ms - 3001[0m
+[0mGET /favicon.ico [33m404 [0m492.621 ms - 1146[0m
+In Getcity
+{ q: 'P' }
+/^P/
+Panguitch
+Paradise
+Paragonah
+Park City
+Park Valley
+Parowan
+Payson
+Peoa
+Pine Valley
+Pleasant Grove
+Plymouth
+Portage
+Price
+Providence
+Provo
+[0mGET /getcity?q=P [32m200 [0m2.458 ms - 304[0m
+In Getcity
+{ q: 'P' }
+/^P/
+Panguitch
+Paradise
+Paragonah
+Park City
+Park Valley
+Parowan
+Payson
+Peoa
+Pine Valley
+Pleasant Grove
+Plymouth
+Portage
+Price
+Providence
+Provo
+[0mGET /getcity?q=P [36m304 [0m1.980 ms - -[0m
+In Getcity
+{ q: 'Pro' }
+/^Pro/
+Providence
+Provo
+[0mGET /getcity?q=Pro [32m200 [0m0.756 ms - 40[0m
+In Getcity
+{ q: 'Pro' }
+/^Pro/
+Providence
+Provo
+[0mGET /getcity?q=Pro [36m304 [0m1.318 ms - -[0m
+In Getcity
+{ q: 'Provo' }
+/^Provo/
+Provo
+[0mGET /getcity?q=Provo [32m200 [0m0.738 ms - 18[0m
+In Getcity
+{ q: 'Provo' }
+/^Provo/
+Provo
+[0mGET /getcity?q=Provo [36m304 [0m39.617 ms - -[0m
+[0mGET /pokemon [33m404 [0m1.582 ms - 1146[0m
+[0mGET /pokemon [33m404 [0m1.836 ms - 1146[0m
+In GetPokemon
+{ type: 'electric' }
+Bulbasaur
+[0mGET /getpokemon?type=electric [36m304 [0m2.213 ms - -[0m

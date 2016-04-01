@@ -1,0 +1,12 @@
+
+> cities@0.0.0 start /opt/bitnami/apache2/htdocs/CS360/Lab7/cities
+> node ./bin/www
+
+In GetPokemon
+{}
+Bulbasaur
+[0mGET /getpokemon [32m200 [0m1190.066 ms - 17593[0m
+In GetPokemon
+{ type: 'electric' }
+Bulbasaur
+[0mGET /getpokemon?type=electric [36m304 [0m451.169 ms - -[0m

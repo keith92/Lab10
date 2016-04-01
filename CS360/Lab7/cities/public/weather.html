@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>City Finder</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script>
+$(document).ready(function() {	 //when the page has been rendered and is ready
+    $( "#cityfield" ).keyup(function() { //modifies the keyup event for cityfield
+	var url = "http://ec2-54-218-67-46.us-west-2.compute.amazonaws.com:3010/getcity?q="+$("#cityfield").val();
+	$.getJSON(url,function(data) {
+  	  var everything;
+  	  everything = "<ul>";
+  	  $.each(data, function(i,item) {
+    	    everything += "<li> "+data[i].city;
+  	  });
+    
+  	  everything += "</ul>";
+  	  $("#txtHint").html(everything);
+	});
+    });
+
+    $("#button").click(function(e){
+      var value = $("#cityfield").val();
+      e.preventDefault();
+      $("#dispcity").text(value);
+      
+      var myurl= "https://api.wunderground.com/api/1ef52497b8005aac/geolookup/conditions/q/UT/";
+      myurl += value;
+      myurl += ".json";
+      $.ajax({
+     	url : myurl,
+    	dataType : "jsonp",
+    	success : function(parsed_json) {
+      	  var location = parsed_json['location']['city'];
+	  location += ", " + parsed_json['location']['state'];
+      	  var temp_string = parsed_json['current_observation']['temperature_string'];
+      	  var current_weather = parsed_json['current_observation']['weather'];
+      	  everything = "<ul>";
+      	  everything += "<li>Location: "+location;
+      	  everything += "<li>Temperature: "+temp_string;
+      	  everything += "<li>Weather: "+current_weather;
+      	  everything += "</ul>";
+      	  $("#weather").html(everything);
+
+	  current_weather = current_weather.replace(/ /g,"_");
+	  if(current_weather == "Clear")
+		current_weather = "Clear_Weather";
+	  myurl = "https://api.flickr.com/services/rest/?api_key=aa69e207a3b322ca9acd00462d8a84c5&format=json&tags="+current_weather+"&text="+current_weather+"&method=flickr.photos.search";
+          console.log(myurl);
+	  $.getJSON(myurl+"&jsoncallback=?",function(data) {
+	    var resultNum = data["photos"]["total"];
+	    if (resultNum > 100)
+		resultNum = 100;
+	    var rand = Math.floor((Math.random() * resultNum) + 1);
+	    console.log("Rand: "+rand+" Results: "+resultNum);
+	    var id = data["photos"]["photo"][rand]["id"];
+	    var farm = data["photos"]["photo"][rand]["farm"];
+	    var server = data["photos"]["photo"][rand]["server"];
+	    var secret = data["photos"]["photo"][rand]["secret"];
+	    var photoURL = "https://farm"+farm+".staticflickr.com/"+server+"/"+id+"_"+secret+".jpg";
+	    console.log("Photo: "+photoURL);
+	    $("#weather").append("<img src="+photoURL+">");
+	  })
+	  .fail(function() {
+    	  console.log( "error" );
+  	  });
+	}
+      });
+    });
+});
+</script>
+
+</head>
+<body>
+<form>
+Enter A Utah City: <input type="text" id="cityfield" value=""><br>
+Suggestion: <span id="txtHint">Empty</span>
+<input id="button" type="submit" value="Submit">
+</form>
+<p>City</p>
+<textarea id="dispcity">No City</textarea>
+<p>Current Weather</p>
+<div id="weather">No weather</div>
+
+</body>
+</html>
